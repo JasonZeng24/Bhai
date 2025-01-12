@@ -1043,9 +1043,47 @@
 .fa-fire-extinguisher:before {
   content: "\f134";
 }
+
 .fa-rocket:before {
-  content: "\f135";
+  content: '';
+  display: inline-block;
+  width: 8em;
+  /* Responsive size */
+  height: 8em;
+  background-image: url("/images/Bhai_logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  /* Position the logo independently */
+  top: 2%;
+  /* Adjust top position */
+  left: 5%;
+  /* Adjust left position */
+  z-index: 10;
+  padding: 1em;
+  /* Ensure it appears above other elements */
 }
+@media (max-width: 768px) {
+  .fa-rocket:before {
+    width: 5em;
+    /* Smaller size for smaller screens */
+    top: 0.5rem;
+    /* Adjust vertical placement */
+    left: 0.5rem;
+    /* Adjust horizontal placement */
+  }
+}
+
+@media (max-width: 480px) {
+  .fa-rocket:before {
+    width: 4em;
+    /* Further reduce size for very small screens */
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+}
+
 .fa-maxcdn:before {
   content: "\f136";
 }
