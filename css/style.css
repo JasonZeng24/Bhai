@@ -167,10 +167,10 @@ nav ul li ul li:hover { background: #f8f9fa; }
 
 /* Background color change on Hover */
 nav a:hover { 
-	color: #ddd;
+	color: #8a8181;
 }
 .menu li.active  a{ 
-	color: #808080;
+	color: #000;
 }
 
 /* Hide Dropdowns by Default
